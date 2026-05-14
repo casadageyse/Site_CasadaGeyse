@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 
-const WA_CONTATO = '5547999999999'
+const WA_CONTATO = '5547885159790'
 
 export default function HeroCasa() {
   const heroRef = useRef()

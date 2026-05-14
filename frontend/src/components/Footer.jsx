@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const WA_CONTATO = '5547999999999' // número da Geyse — atualizar
+const WA_CONTATO = '5547885159790' // número da Geyse — atualizar
 
 export default function Footer() {
   return (

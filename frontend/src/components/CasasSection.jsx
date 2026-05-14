@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const WA_CONTATO = '5547999999999'
+const WA_CONTATO = '5547885159790'
 
 const CASAS = [
   {
