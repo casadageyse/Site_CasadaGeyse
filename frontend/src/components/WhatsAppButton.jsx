@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const WA_CONTATO = '5547885159790' // número da Geyse — atualizar
+const WA_CONTATO = '554788515979' // número da Geyse — atualizar
 const WA_MSG = 'Olá! Gostaria de saber mais sobre os quartos da Casa da Geyse.'
 
 /* Logo oficial WhatsApp — outline verde */
