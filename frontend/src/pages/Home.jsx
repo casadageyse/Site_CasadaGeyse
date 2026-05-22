@@ -8,7 +8,6 @@ import DiferenciaisSection from '../components/DiferenciaisSection'
 import ComoFunciona from '../components/ComoFunciona'
 import ClassificadosPreview from '../components/ClassificadosPreview'
 import Footer from '../components/Footer'
-import PromoPopup from '../components/PromoPopup'
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
         <ClassificadosPreview />
       </main>
       <Footer />
-      <PromoPopup />
     </>
   )
 }
+
