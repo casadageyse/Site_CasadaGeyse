@@ -58,10 +58,6 @@ export default function Header() {
             <Link to="/classificados" className="text-gray-400 hover:text-white transition-colors duration-200">
               Classificados
             </Link>
-            <a href={`https://wa.me/${WA_CONTATO}`} target="_blank" rel="noreferrer"
-               className="btn-primary px-5 py-2.5 rounded-lg font-bold text-xs tracking-wide">
-              RESERVE AGORA
-            </a>
           </nav>
 
           <button onClick={() => setOpen(o => !o)} className="md:hidden text-gray-400 hover:text-white p-2 transition-colors">
@@ -78,10 +74,6 @@ export default function Header() {
             <button onClick={() => scrollTo('casas')} className="text-gray-400 hover:text-white px-3 py-2.5 rounded-lg hover:bg-white/[0.04] transition-all text-left">Nossas Casas</button>
             <button onClick={() => scrollTo('como-funciona')} className="text-gray-400 hover:text-white px-3 py-2.5 rounded-lg hover:bg-white/[0.04] transition-all text-left">Como Funciona</button>
             <Link to="/classificados" onClick={() => setOpen(false)} className="text-gray-400 hover:text-white px-3 py-2.5 rounded-lg hover:bg-white/[0.04] transition-all">Classificados</Link>
-            <a href={`https://wa.me/${WA_CONTATO}`} target="_blank" rel="noreferrer"
-               className="btn-primary px-5 py-3 rounded-lg font-bold text-xs text-center mt-2">
-              RESERVE AGORA
-            </a>
           </div>
         )}
       </div>

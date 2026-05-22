@@ -71,15 +71,6 @@ export default function HeroCasa() {
             </div>
 
             <div className="hero-cta opacity-0 flex flex-col sm:flex-row gap-3">
-              <a
-                href={`https://wa.me/${WA_CONTATO}?text=Ol%C3%A1%2C%20gostaria%20de%20reservar%20um%20quarto%20na%20Casa%20da%20Geyse!`}
-                target="_blank" rel="noreferrer"
-                className="btn-primary px-8 py-4 rounded-xl font-black text-sm tracking-wide text-center
-                           shadow-[0_0_40px_rgba(233,30,140,0.25)] hover:shadow-[0_0_60px_rgba(233,30,140,0.4)]
-                           transition-shadow duration-300"
-              >
-                RESERVAR VIA WHATSAPP
-              </a>
               <Link
                 to="/classificados"
                 className="px-8 py-4 rounded-xl border border-white/[0.12] hover:border-white/25

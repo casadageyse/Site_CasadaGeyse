@@ -77,17 +77,6 @@ export default function ComoFunciona() {
           ))}
         </div>
 
-        <div className="cf-cta opacity-0 text-center">
-          <a
-            href={`https://wa.me/${WA_CONTATO}?text=Ol%C3%A1%20Geyse%2C%20quero%20saber%20mais%20sobre%20os%20quartos!`}
-            target="_blank" rel="noreferrer"
-            className="btn-primary px-10 py-5 rounded-xl font-black text-sm tracking-wide inline-block
-                       shadow-[0_0_40px_rgba(233,30,140,0.3)] hover:shadow-[0_0_60px_rgba(233,30,140,0.45)]
-                       transition-shadow duration-300"
-          >
-            FALAR COM A GEYSE AGORA
-          </a>
-        </div>
       </div>
     </section>
   )

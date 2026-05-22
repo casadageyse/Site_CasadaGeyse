@@ -251,13 +251,6 @@ function CasaCard({ casa }) {
         </div>
 
         <div className="flex gap-2 mt-auto">
-          <a
-            href={`https://wa.me/${WA_CONTATO}?text=Ol%C3%A1%2C%20quero%20reservar%20na%20unidade%20${encodeURIComponent(casa.nome)}!`}
-            target="_blank" rel="noreferrer"
-            className="flex-1 btn-primary py-3 rounded-xl text-xs font-black text-center"
-          >
-            RESERVAR VIA WHATSAPP
-          </a>
           <a href={casa.maps} target="_blank" rel="noreferrer"
             className="border border-white/[0.1] hover:border-primary/40 text-gray-400 hover:text-primary
                        px-3 py-3 rounded-xl text-xs font-bold flex items-center gap-1 transition-colors">
