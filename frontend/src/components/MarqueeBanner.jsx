@@ -41,7 +41,7 @@ export default function MarqueeBanner() {
       {/* CTA bar */}
       <div className="flex items-center justify-center gap-4 py-3 px-4 border-t border-primary/10
                       bg-gradient-to-r from-transparent via-primary/[0.04] to-transparent">
-        <span className="text-white font-black text-sm sm:text-base tracking-wide drop-shadow-[0_0_8px_rgba(233,30,140,0.5)]">
+        <span className="text-white font-black text-base sm:text-lg tracking-wide drop-shadow-[0_0_8px_rgba(233,30,140,0.5)]">
           Veja os perfis das acompanhantes disponíveis
         </span>
         <Link
