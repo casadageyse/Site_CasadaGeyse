@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import SEO from '../components/SEO'
 import { supabase } from '../supabase'
 
 const REGIOES = [
@@ -76,6 +77,11 @@ export default function ClassificadosPage() {
 
   return (
     <>
+      <SEO
+        title="Classificados — Acompanhantes em Penha e Barra Velha | Casa da Geyse"
+        description="Veja os perfis das acompanhantes disponíveis em Penha Centro, Penha Armação e Barra Velha. Perfis verificados com contato direto via WhatsApp."
+        canonical="https://casadageyse.com.br/classificados"
+      />
       <Header />
       <main className="min-h-screen bg-[#06061a]">
 

@@ -1,9 +1,15 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import SEO from '../components/SEO'
 
 export default function RegrasPage() {
   return (
     <>
+      <SEO
+        title="Regras da Casa — Casa da Geyse"
+        description="Regras e normas de convivência para hóspedes da Casa da Geyse em Penha e Barra Velha, Santa Catarina."
+        canonical="https://casadageyse.com.br/regras"
+      />
       <Header />
       <main className="min-h-screen bg-[#06061a]">
 
