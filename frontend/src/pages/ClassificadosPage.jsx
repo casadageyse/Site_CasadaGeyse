@@ -11,6 +11,16 @@ const REGIOES = [
   { id: 'barra-velha-centro', label: 'Barra Velha Centro'},
 ]
 
+function trackWhatsApp(nome, regiao) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'whatsapp_click', {
+      event_category: 'contato',
+      event_label: nome,
+      regiao: regiao,
+    })
+  }
+}
+
 function Card({ nome, foto_url, whatsapp, regiao }) {
   const msg = encodeURIComponent(`Olá ${nome}, vi seu perfil na Casa da Geyse e gostaria de saber mais!`)
   return (
@@ -34,6 +44,7 @@ function Card({ nome, foto_url, whatsapp, regiao }) {
         <span className="font-black text-white text-base tracking-tight">{nome}</span>
         <a href={`https://wa.me/${whatsapp}?text=${msg}`}
            target="_blank" rel="noreferrer"
+           onClick={() => trackWhatsApp(nome, regiao)}
            className="w-full py-2.5 rounded-xl text-xs font-black tracking-widest text-center
                       bg-[#25D366] hover:bg-[#20bc5a] text-white
                       shadow-[0_0_20px_rgba(37,211,102,0.25)] hover:shadow-[0_0_35px_rgba(37,211,102,0.45)]
