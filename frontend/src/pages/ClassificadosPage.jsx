@@ -9,6 +9,8 @@ const REGIOES = [
   { id: 'penha-centro',       label: 'Penha Centro'      },
   { id: 'penha-armacao',      label: 'Penha Armação'     },
   { id: 'barra-velha-centro', label: 'Barra Velha Centro'},
+  { id: 'navegantes', label: 'Navegantes'},
+
 ]
 
 function trackWhatsApp(nome, regiao) {

@@ -120,6 +120,47 @@ const CASAS = [
     arredores: ['Comércio local', 'Salão', 'Cafeteria', 'Lojas', 'Pizzaria'],
     destaque: 'Na marginal da BR — Sul e Norte',
   },
+  
+  {
+    id: 'navegantes',
+    nome: 'Navegantes (Praia do Gravatá)',
+    subtitulo: 'Rua Julia Costa flores, 311',
+    referencia: 'Referência: Mercado Nordeste',
+    tag: '100m da praia',
+    badge: 'Barra Velha',
+    fotos: ['https://i.postimg.cc/fyqZ4KpX/Whats-App-Image-2026-09-17-at-10-35-14.jpg', 'https://i.postimg.cc/FzCmtZ8S/Whats-App-Image-2026-09-17-at-10-30-10.jpg', 'https://i.postimg.cc/2y9mpwMB/Whats-App-Image-2026-09-17-at-10-29-40.jpg'],
+    videos: ['', ''],
+    maps: 'https://www.google.com/maps/search/?api=1&query=Rua+J%C3%BAlia+Costa+Flores%2C+311+-+Gravat%C3%A1%2C+Navegantes+-+SC',
+    cidades: ['Itajaí', 'Penha'],
+    quartos: { total: 3, suites: 1, standard: 5 },
+    praia: '100 metros',
+    precos: [
+      { tipo: 'Quarto (com TV Smart)',            valor: 'R$ 120' },
+      { tipo: 'Suíte (com TV e banheiro)',  valor: 'R$ 140' },
+    ],
+    estrutura: [
+      'TV em todos os quartos',
+      'Lavanderia completa',
+      'Cozinha completa',
+      'Piscina com hidro',
+      'Área de ventilação',
+      'Garagem',
+      'Portões eletrônicos',
+      'Monitoramento 24h por câmeras',
+      '3 banheiros',
+      'Churrasqueira',
+    ],
+    incluso: [
+      'Produtos de higiene',
+      'Preservativos e lubrificantes',
+      '4 jogos de cama',
+      '10 toalhas',
+      'Maquina de cartão',
+      '',
+    ],
+    arredores: ['Comércio local',, 'Cafeteria', 'Lojas', 'Pizzaria'],
+    destaque: 'Na marginal da BR — Sul e Norte',
+  },
 ]
 
 function Pill({ children }) {
@@ -292,7 +333,7 @@ function CasasSection() {
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-3">Nossas Unidades</h2>
           <p className="text-gray-500 max-w-xl text-[15px]">
-            Três localizações no litoral norte de SC — estrutura completa, discrição total.
+            Quatro localizações no litoral norte de SC — estrutura completa, discrição total.
           </p>
         </div>
 

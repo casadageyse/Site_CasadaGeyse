@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const STATS = [
-  { num: 3,   suffix: '',  label: 'Unidades'  },
+  { num: 4,   suffix: '',  label: 'Unidades'  },
   { num: 700, suffix: '+', label: 'Hóspedes'  },
   { num: 100, suffix: '%', label: 'Discrição' },
 ]
@@ -53,8 +53,7 @@ export default function SobreCasa() {
           <p className="text-gray-400 leading-relaxed text-[15px]">
             A <strong className="text-white">Casa da Geyse</strong> nasceu da vontade de oferecer um espaço
             seguro, organizado e discreto para quem busca um encontro com acompanhante em Santa Catarina.
-            Com unidades em <strong className="text-white">Penha</strong> (nos bairros Armação e Centro) e
-            em <strong className="text-white">Barra Velha</strong>, a casa tem toda a infraestrutura para
+            Com unidades em <strong className="text-white">Penha</strong> (nos bairros Armação e Centro) <strong className="text-white">Barra Velha</strong> e <strong className="text-white">Navegantes</strong>, as casas têm toda a infraestrutura para
             momentos confortáveis e sem preocupações.
           </p>
         </div>

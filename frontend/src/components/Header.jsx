@@ -58,6 +58,14 @@ export default function Header() {
             <Link to="/classificados" className="text-gray-400 hover:text-white transition-colors duration-200">
               Classificados
             </Link>
+            <a 
+  href={`https://wa.me/${WA_CONTATO}?text=Olá!%20Gostaria%20de%20reservar%20um%20quarto.`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#00E676] hover:bg-[#00C853] text-white px-4 py-2 rounded-full text-xs font-black tracking-wide transition-colors duration-200"
+>
+  Reserve Seu Quarto
+</a>
           </nav>
 
           <button onClick={() => setOpen(o => !o)} className="md:hidden text-gray-400 hover:text-white p-2 transition-colors">

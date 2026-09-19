@@ -18,6 +18,14 @@ const CIDADES = [
     foto: '/o-que-fazer-em-barra-velha-sc-clube-candeias-festival-lagoa.jpeg',
     descricao: 'Na Praia do Tabuleiro, entre o mar e a marginal da BR — ponto de passagem estratégico.',
     detalhes: ['50m da praia', '1 unidade', 'Praia do Tabuleiro'],
+
+  },
+  {
+    nome: 'Navegantes',
+    linhas: ['Navegantes'],
+    foto: 'https://i.postimg.cc/cJwL4XJF/Gemini-Generated-Image-fgmqx3fgmqx3fgmq.jpg',
+    descricao: 'Sua descrição personalizada da nova localização aqui.',
+    detalhes: ['100m da praia', '1 unidade', 'Centro'],
   },
 ]
 
@@ -147,9 +155,11 @@ export default function LocalizacoesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
           {CIDADES.map((cidade, i) => (
-            <CidadeCard key={cidade.nome} cidade={cidade} index={i} />
+  <div key={cidade.nome} className="w-full lg:w-[calc(50%-10px)] max-w-xl">
+    <CidadeCard cidade={cidade} index={i} />
+  </div>
           ))}
         </div>
       </div>
