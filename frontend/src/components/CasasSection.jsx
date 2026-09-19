@@ -156,7 +156,7 @@ const CASAS = [
       '4 jogos de cama',
       '10 toalhas',
       'Maquina de cartão',
-      '',
+      ,
     ],
     arredores: ['Comércio local',, 'Cafeteria', 'Lojas', 'Pizzaria'],
     destaque: 'Na marginal da BR — Sul e Norte',
