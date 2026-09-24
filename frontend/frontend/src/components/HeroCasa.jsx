@@ -44,7 +44,7 @@ export default function HeroCasa() {
                             uppercase tracking-[0.2em] mb-8 border border-primary/20 bg-primary/[0.06]
                             px-4 py-2 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-              Penha, Barra Velha &amp; Navegantes — Santa Catarina
+              Penha &amp; Barra Velha — Santa Catarina
             </div>
 
             <h1 className="hero-title opacity-0 text-5xl sm:text-6xl lg:text-7xl font-black text-white

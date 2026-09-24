@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 const WA_CONTATO = '554788515979'
 
 const PASSOS = [
-  { num: '01', titulo: 'Escolha sua unidade',   desc: 'Penha Armação, Penha Centro, Barra Velha ou Navegantes — veja as fotos e escolha onde quer se encontrar.' },
+  { num: '01', titulo: 'Escolha sua unidade',   desc: 'Penha Armação, Penha Centro ou Barra Velha — veja as fotos e escolha onde quer se encontrar.' },
   { num: '02', titulo: 'Reserve pelo WhatsApp', desc: 'Fale direto com a Geyse, combine a data e o período. Simples e sem burocracia.' },
   { num: '03', titulo: 'Chegue e aproveite',    desc: 'Quarto pronto, limpo e estruturado. Só chegar e aproveitar com conforto e tranquilidade.' },
 ]

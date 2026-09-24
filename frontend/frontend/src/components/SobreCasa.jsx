@@ -74,6 +74,3 @@ export default function SobreCasa() {
     </section>
   )
 }
-
-
-

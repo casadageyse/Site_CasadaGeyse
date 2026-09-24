@@ -56,7 +56,7 @@ export default function PromoPopup() {
 
           {/* Desc */}
           <p className="text-gray-400 text-sm leading-relaxed mb-7 max-w-xs">
-            Perfis disponíveis em Penha, Barra Velha e Navegantes. Acesse os classificados e encontre a acompanhante ideal.
+            Perfis disponíveis em Penha e Barra Velha. Acesse os classificados e encontre a acompanhante ideal.
           </p>
 
           {/* CTA */}

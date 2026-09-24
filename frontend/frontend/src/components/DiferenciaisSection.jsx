@@ -67,7 +67,7 @@ const ITENS = [
   { Icon: IconWifi,       titulo: 'Wi-Fi',                    desc: 'Internet incluída no valor do aluguel.' },
   { Icon: IconEscudo,     titulo: 'Segurança e Discrição',    desc: 'Sem identificação em fachada, entrada discreta e privativa.' },
   { Icon: IconLimpeza,    titulo: 'Limpeza Profissional',     desc: 'Quartos e áreas comuns higienizados periodicamente.' },
-  { Icon: IconLocalizacao,titulo: 'Localização Estratégica',  desc: 'Próximos ao centro e pontos de movimento em Penha, Barra Velha e Navegantes.' },
+  { Icon: IconLocalizacao,titulo: 'Localização Estratégica',  desc: 'Próximos ao centro e pontos de movimento em Penha e Barra Velha.' },
   { Icon: IconChat,       titulo: 'Suporte Direto',           desc: 'Atendimento via WhatsApp com a Geyse para reservas e dúvidas.' },
 ]
 

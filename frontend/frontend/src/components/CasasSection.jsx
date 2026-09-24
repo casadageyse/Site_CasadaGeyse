@@ -130,7 +130,7 @@ const CASAS = [
     badge: 'Barra Velha',
     fotos: ['https://i.postimg.cc/fyqZ4KpX/Whats-App-Image-2026-09-17-at-10-35-14.jpg', 'https://i.postimg.cc/FzCmtZ8S/Whats-App-Image-2026-09-17-at-10-30-10.jpg', 'https://i.postimg.cc/2y9mpwMB/Whats-App-Image-2026-09-17-at-10-29-40.jpg'],
     videos: ['', ''],
-    maps: 'https://maps.app.goo.gl/NRej5gNeaFV9F2DX7',
+    maps: 'https://www.google.com/maps/search/?api=1&query=Rua+J%C3%BAlia+Costa+Flores%2C+311+-+Gravat%C3%A1%2C+Navegantes+-+SC',
     cidades: ['Itajaí', 'Penha'],
     quartos: { total: 3, suites: 1, standard: 5 },
     praia: '100 metros',
@@ -152,7 +152,7 @@ const CASAS = [
     ],
     incluso: [
       'Produtos de higiene',
-      'Preservati vos e lubrificantes',
+      'Preservativos e lubrificantes',
       '4 jogos de cama',
       '10 toalhas',
       'Maquina de cartão',
