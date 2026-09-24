@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://casadageyse.com.br/sitemap.xml
