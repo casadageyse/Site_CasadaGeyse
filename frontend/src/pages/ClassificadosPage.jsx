@@ -5,15 +5,17 @@ import SEO from '../components/SEO'
 import { supabase } from '../supabase'
 
 const REGIOES = [
-  { id: 'todas',              label: 'Todas'             },
+  { id: 'todas',               label: 'Todas'              },
   { id: 'penha-centro',       label: 'Penha Centro'      },
   { id: 'penha-armacao',      label: 'Penha Armação'     },
   { id: 'barra-velha-centro', label: 'Barra Velha Centro'},
-  { id: 'navegantes', label: 'Navegantes'},
-
+  { id: 'navegantes',         label: 'Navegantes'        },
 ]
 
-function trackWhatsApp(nome, regiao) {
+async function handleWhatsAppClick(e, id, nome, regiao, whatsapp) {
+  if (e) e.preventDefault();
+
+  // 1. Rastreio no Google Analytics
   if (typeof window.gtag === 'function') {
     window.gtag('event', 'whatsapp_click', {
       event_category: 'contato',
@@ -21,10 +23,21 @@ function trackWhatsApp(nome, regiao) {
       regiao: regiao,
     })
   }
+
+  // 2. Incremento na coluna 'contatos' da tabela 'acompanhantes' do Supabase
+  try {
+    const { error } = await supabase.rpc('increment_whatsapp_clicks', { escort_id: id })
+    if (error) console.error('Erro na RPC do Supabase:', error)
+  } catch (err) {
+    console.error('Erro ao conectar ao Supabase:', err)
+  } finally {
+    // 3. Redirecionamento para o WhatsApp
+    const msg = encodeURIComponent(`Olá ${nome}, vi seu perfil na Casa da Geyse e gostaria de saber mais!`)
+    window.open(`https://wa.me/${whatsapp}?text=${msg}`, '_blank')
+  }
 }
 
-function Card({ nome, foto_url, whatsapp, regiao }) {
-  const msg = encodeURIComponent(`Olá ${nome}, vi seu perfil na Casa da Geyse e gostaria de saber mais!`)
+function Card({ id, nome, foto_url, whatsapp, regiao }) {
   return (
     <div className="group flex flex-col bg-white/[0.03] border border-white/[0.08] rounded-2xl overflow-hidden
                     hover:border-primary/30 hover:shadow-[0_0_30px_rgba(233,30,140,0.12)] transition-all duration-300">
@@ -44,13 +57,13 @@ function Card({ nome, foto_url, whatsapp, regiao }) {
       </div>
       <div className="p-4 flex flex-col gap-3">
         <span className="font-black text-white text-base tracking-tight">{nome}</span>
-        <a href={`https://wa.me/${whatsapp}?text=${msg}`}
+        <a href={`https://wa.me/${whatsapp}`}
            target="_blank" rel="noreferrer"
-           onClick={() => trackWhatsApp(nome, regiao)}
+           onClick={(e) => handleWhatsAppClick(e, id, nome, regiao, whatsapp)}
            className="w-full py-2.5 rounded-xl text-xs font-black tracking-widest text-center
                       bg-[#25D366] hover:bg-[#20bc5a] text-white
                       shadow-[0_0_20px_rgba(37,211,102,0.25)] hover:shadow-[0_0_35px_rgba(37,211,102,0.45)]
-                      transition-all duration-300 flex items-center justify-center gap-2">
+                      transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
           <svg viewBox="0 0 32 32" fill="white" className="w-4 h-4 flex-shrink-0">
             <path fillRule="evenodd" clipRule="evenodd" d="M16 2C8.268 2 2 8.268 2 16c0 2.57.687 4.978 1.886 7.047L2 30l7.18-1.867A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Zm0 25.6a11.52 11.52 0 0 1-5.882-1.608l-.421-.252-4.366 1.135 1.164-4.245-.275-.435A11.47 11.47 0 0 1 4.4 16C4.4 9.594 9.594 4.4 16 4.4S27.6 9.594 27.6 16 22.406 27.6 16 27.6Z"/>
             <path d="M22.29 19.12c-.33-.165-1.96-.965-2.263-1.075-.302-.11-.522-.165-.741.165-.22.33-.852 1.075-1.044 1.295-.192.22-.385.247-.715.082-1.985-.992-3.286-1.77-4.591-4.016-.347-.6.347-.557.99-1.853.11-.22.055-.412-.027-.55-.083-.138-.742-1.786-1.016-2.446-.274-.66-.55-.57-.741-.58l-.632-.012c-.22 0-.578.083-.88.412-.303.33-1.155 1.128-1.155 2.75 0 1.622 1.182 3.19 1.347 3.41.165.22 2.33 3.558 5.647 4.992 2.097.906 2.916.982 3.966.826.638-.096 1.958-.8 2.234-1.572.275-.77.275-1.43.192-1.568-.08-.137-.3-.22-.632-.385Z"/>
