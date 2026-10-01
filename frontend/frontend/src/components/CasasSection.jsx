@@ -97,9 +97,9 @@ const CASAS = [
     quartos: { total: 6, suites: 1, standard: 5 },
     praia: '50 metros',
     precos: [
-      { tipo: 'Quarto (com TV)',            valor: 'R$ 140' },
-      { tipo: 'Quarto com sacada',          valor: 'R$ 150' },
-      { tipo: 'Suíte (com TV e banheiro)',  valor: 'R$ 160' },
+      { tipo: 'Quarto (com TV)',            valor: 'R$ 130' },
+      { tipo: 'Quarto com sacada',          valor: 'R$ 140' },
+      { tipo: 'Suíte (com TV e banheiro)',  valor: 'R$ 150' },
     ],
     estrutura: [
       'TV em todos os quartos',
