@@ -147,7 +147,7 @@ export default function LocalizacoesSection() {
             <span className="w-8 h-px bg-primary" />
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4 leading-tight">
-            Dois destinos,<br />
+            Três destinos,<br />
             <span className="text-primary">uma só experiência</span>
           </h2>
           <p className="text-gray-500 text-base max-w-lg mx-auto">
