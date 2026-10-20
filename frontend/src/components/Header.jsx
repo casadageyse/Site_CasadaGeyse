@@ -59,7 +59,7 @@ export default function Header() {
               Classificados
             </Link>
             <a 
-  href={`https://wa.me/${WA_CONTATO}?text=Olá!%20Gostaria%20de%20reservar%20um%20quarto.`}
+  href={`https://api.whatsapp.com/send/?phone=554797023191&text=Ol%C3%A1%21+Gostaria+de+reservar+um+quarto.&type=phone_number&app_absent=0`}
   target="_blank"
   rel="noopener noreferrer"
   className="bg-[#00E676] hover:bg-[#00C853] text-white px-4 py-2 rounded-full text-xs font-black tracking-wide transition-colors duration-200"
